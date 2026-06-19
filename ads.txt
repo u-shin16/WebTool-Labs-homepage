@@ -1,0 +1,2 @@
+google.com, pub-6760057382445478, DIRECT, f08c47fec0942fa0
+subdomain=hayo.webtool-labs.com
