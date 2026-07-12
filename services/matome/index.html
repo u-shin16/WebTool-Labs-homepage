@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>まとめときや | 階層構造で整理できるWebメモアプリ - WebTool-Labs</title>
+  <meta name="description" content="まとめときやは、メモを親子構造で整理し、マインドマップ表示でつながりを確認できるWebメモアプリです。テンプレート・自動保存・共同作業機能の仕組みや使い方を詳しく紹介します。">
+  <link rel="canonical" href="https://webtool-labs.com/services/matome/">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="まとめときや | 階層構造で整理できるWebメモアプリ">
+  <meta property="og:description" content="メモを親子構造で整理し、マインドマップ表示でつながりを確認できるWebメモアプリです。">
+  <meta property="og:url" content="https://webtool-labs.com/services/matome/">
+  <meta property="og:site_name" content="WebTool-Labs">
+  <meta property="og:image" content="https://webtool-labs.com/favicon.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#0878b8">
+  <link rel="icon" type="image/png" sizes="256x256" href="/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/style.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6760057382445478" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "まとめときや",
+    "url": "https://matome.webtool-labs.com/",
+    "applicationCategory": "ProductivityApplication",
+    "operatingSystem": "Webブラウザ",
+    "description": "メモを親子構造で整理し、マインドマップ表示で内容のつながりを確認できるWebメモアプリ。テンプレート、自動保存、共同作業機能を備えています。",
+    "image": "https://webtool-labs.com/assets/icons/matome.webp"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "まとめときやは無料で使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "現在、基本的な機能は無料でご利用いただけます。ただし、今後提供内容や条件を変更する可能性があります。最新の情報はサービス内の案内をご確認ください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "アカウント登録は必要ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。まとめときやのご利用には、アカウント登録が必要です。初回アクセス時に、案内に沿って登録を行ってください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "保存したメモは他の人に見られますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "共同作業機能を使わない限り、メモは第三者と共有されません。共同作業機能を利用する場合は、発行された合言葉を知っている人だけが参加できます。詳しくはプライバシーポリシーをご確認ください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "スマートフォンでも利用できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。スマートフォン・タブレット・パソコンのブラウザに対応しており、画面サイズに応じて表示が調整されます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "不具合の報告はどこから送れますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "WebTool-Labsのお問い合わせページから、サービス名「まとめときや」と発生した状況を添えてご連絡ください。"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="WebTool-Labs トップページ">
+        <span class="brand-mark" aria-hidden="true">W</span>
+        <span>WebTool-Labs</span>
+      </a>
+      <nav class="site-nav" id="primary-nav" aria-label="メインナビゲーション">
+        <a href="/">ホーム</a>
+        <a href="/#services">サービス</a>
+        <a href="/about.html">WebTool-Labsについて</a>
+        <a href="/#faq">よくある質問</a>
+        <a href="/contact.html">お問い合わせ</a>
+      </nav>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="メニューを開く">
+        <span aria-hidden="true">&#9776;</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="パンくずリスト">
+          <a href="/">ホーム</a><span class="sep">/</span><a href="/#services">サービス</a><span class="sep">/</span><span aria-current="page">まとめときや</span>
+        </nav>
+        <p class="eyebrow">Service</p>
+        <div class="service-hero-head">
+          <img class="service-hero-icon" src="/assets/icons/matome.webp" alt="まとめときやのアイコン" width="72" height="72">
+          <h1>まとめときや ― 階層構造で整理できるWebメモアプリ</h1>
+        </div>
+        <p>メモを親子構造で整理し、内容のつながりをマインドマップとして確認できるWebメモアプリです。インストール不要で、ブラウザからすぐに使い始められます。</p>
+      </div>
+    </header>
+
+    <div class="section container content-layout">
+      <nav class="side-nav" aria-label="ページ内メニュー">
+        <strong>目次</strong>
+        <a href="#overview">どんなアプリか</a>
+        <a href="#why">階層メモが必要な理由</a>
+        <a href="#difference">通常のメモとの違い</a>
+        <a href="#hierarchy">親子構造での整理</a>
+        <a href="#mindmap">マインドマップ表示</a>
+        <a href="#template">テンプレート</a>
+        <a href="#autosave">自動保存</a>
+        <a href="#collab">共同作業機能</a>
+        <a href="#recommend">おすすめの人</a>
+        <a href="#first-use">はじめての使い方</a>
+        <a href="#faq">よくある質問</a>
+      </nav>
+
+      <article class="prose">
+        <section id="overview">
+          <h2>どのようなアプリなのか</h2>
+          <p>まとめときやは、メモを親子関係（階層構造）で整理できるWebメモアプリです。ひとつのテーマの下に、関連する内容を子メモとしてぶら下げていくことで、情報が増えても関連性を保ったまま整理できます。整理した内容はマインドマップとしても表示でき、全体のつながりを俯瞰しながら見返すことができます。ピン留め、テンプレート、自動保存、複数人での共同作業に関する機能も備えています。</p>
+        </section>
+
+        <section id="why">
+          <h2>なぜ階層メモが必要なのか</h2>
+          <p>メモは書き続けるほど量が増え、後から見返したときにどれとどれが関係しているのか分かりにくくなりがちです。一つの大きなテーマに対して、複数の細かい情報がぶら下がっているような場合、時系列に並んだだけのメモでは、その構造を保ったまま記録するのが難しくなります。まとめときやは、メモ同士に親子関係を持たせることで、情報の「つながり」を保ったまま整理できるようにすることを目的に開発しました。</p>
+        </section>
+
+        <section id="difference">
+          <h2>通常のメモアプリとの違い</h2>
+          <p>多くのメモアプリは、メモを一覧やフォルダの中にフラットに並べる形式が中心です。関連するメモをまとめたい場合も、タグ付けや手動でのリンクづけが必要になることが多くあります。まとめときやでは、メモを作成する時点で親子関係を持たせられるため、テーマと詳細の関係を保ったまま記録でき、後からその構造をマインドマップとして視覚的に確認できる点が大きな違いです。</p>
+        </section>
+
+        <section id="hierarchy">
+          <h2>メモを親子構造で整理する方法</h2>
+          <p>既存のメモの下に子メモを追加していくことで、テーマから詳細へと情報を枝分かれさせながら記録できます。大きな話題を親メモとして作成し、そこから思いついた詳細や関連情報を子メモとして書き足していくことで、あとから見返したときにも情報のまとまりが分かりやすくなります。よく参照するメモはピン留めしておくことで、階層をたどらなくてもすぐにアクセスできます。</p>
+        </section>
+
+        <section id="mindmap">
+          <h2>マインドマップ表示の活用方法</h2>
+          <p>親子構造で整理したメモは、マインドマップとしても表示できます。文字の一覧では気づきにくい情報同士のつながりや広がりを、図として俯瞰できるため、全体像を把握したいときや、考えを整理しながら情報の抜け漏れを確認したいときに活用できます。</p>
+        </section>
+
+        <section id="template">
+          <h2>テンプレート機能</h2>
+          <p>よく使う構成をテンプレートとして呼び出せる機能です。同じような形式でメモを作ることが多い場合に、毎回ゼロから項目を作らなくても、テンプレートをもとに必要な部分を書き足していくだけでメモを作成できます。</p>
+        </section>
+
+        <section id="autosave">
+          <h2>自動保存</h2>
+          <p>入力した内容は自動的に保存されます。こまめに保存操作を行わなくても、書いている途中の内容が失われにくいように設計しています。</p>
+        </section>
+
+        <section id="collab">
+          <h2>共同作業機能</h2>
+          <h3>ホストとゲストの権限の違い</h3>
+          <p>まとめときやでは、部屋（ルーム）を作成することで、複数人で同じメモを編集できる共同作業機能を利用できます。部屋を作成すると、他の部屋と重複しない合言葉が自動的に発行されます。この合言葉を共有することで、他の利用者を部屋に招待できます。</p>
+          <p>部屋を作成した人（ホスト）はすべての操作を行えますが、合言葉を使って参加した人（ゲスト）は、メモの削除や名前の変更など、一部の操作が制限されます。これは、複数人で作業する際に、意図しない削除や変更が起きにくいようにするための仕組みです。</p>
+        </section>
+
+        <section id="recommend">
+          <h2>利用をおすすめする人</h2>
+          <ul>
+            <li>勉強や仕事のメモを、テーマごとに構造的に整理したい人</li>
+            <li>アイデアや考えを、あとからつながりごと見返したい人</li>
+            <li>家族やチームなど、複数人で同じメモを編集しながら作業したい人</li>
+          </ul>
+        </section>
+
+        <section id="first-use">
+          <h2>初めて利用する人向けの使い方</h2>
+          <ol class="step-list">
+            <li><span><a href="https://matome.webtool-labs.com/" target="_blank" rel="noopener noreferrer">まとめときや</a>にブラウザでアクセスします。</span></li>
+            <li>案内に沿ってアカウント登録を行います。</li>
+            <li>新しいメモを作成し、記録したい内容を書き込みます。</li>
+            <li>関連する内容は、子メモとして書き足しながら整理していきます。</li>
+            <li>必要に応じてマインドマップ表示に切り替え、全体のつながりを確認します。</li>
+            <li>複数人で使いたい場合は部屋を作成し、発行された合言葉を共有します。</li>
+          </ol>
+        </section>
+
+        <section id="faq">
+          <h2>よくある質問</h2>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary><h3>まとめときやは無料で使えますか？</h3></summary>
+              <p class="faq-answer">現在、基本的な機能は無料でご利用いただけます。ただし、今後提供内容や条件を変更する可能性があります。最新の情報はサービス内の案内をご確認ください。</p>
+            </details>
+            <details class="faq-item">
+              <summary><h3>アカウント登録は必要ですか？</h3></summary>
+              <p class="faq-answer">はい。まとめときやのご利用には、アカウント登録が必要です。初回アクセス時に、案内に沿って登録を行ってください。</p>
+            </details>
+            <details class="faq-item">
+              <summary><h3>保存したメモは他の人に見られますか？</h3></summary>
+              <p class="faq-answer">共同作業機能を使わない限り、メモは第三者と共有されません。共同作業機能を利用する場合は、発行された合言葉を知っている人だけが参加できます。詳しくは<a href="/privacy.html">プライバシーポリシー</a>をご確認ください。</p>
+            </details>
+            <details class="faq-item">
+              <summary><h3>スマートフォンでも利用できますか？</h3></summary>
+              <p class="faq-answer">はい。スマートフォン・タブレット・パソコンのブラウザに対応しており、画面サイズに応じて表示が調整されます。</p>
+            </details>
+            <details class="faq-item">
+              <summary><h3>不具合の報告はどこから送れますか？</h3></summary>
+              <p class="faq-answer"><a href="/contact.html">お問い合わせページ</a>から、サービス名「まとめときや」と発生した状況を添えてご連絡ください。</p>
+            </details>
+          </div>
+        </section>
+
+        <section>
+          <div class="cta-card">
+            <h2>まとめときやを使ってみる</h2>
+            <p>ブラウザからすぐにアクセスできます。まずはひとつメモを作るところから始めてみてください。</p>
+            <a class="button" href="https://matome.webtool-labs.com/" target="_blank" rel="noopener noreferrer">実際のアプリを開く</a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand footer-brand" href="/"><span class="brand-mark" aria-hidden="true">W</span><span>WebTool-Labs</span></a>
+          <p class="footer-description">暮らしの中の小さな悩みを、使いやすいWebツールで解決します。</p>
+        </div>
+        <div>
+          <p class="footer-heading">サービス</p>
+          <div class="footer-links">
+            <a href="/services/hayo/">はよおきんかい</a>
+            <a href="/services/matome/" aria-current="page">まとめときや</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading">運営情報</p>
+          <div class="footer-links">
+            <a href="/about.html">運営者情報</a>
+            <a href="/privacy.html">プライバシーポリシー</a>
+            <a href="/terms.html">利用規約</a>
+            <a href="/contact.html">お問い合わせ</a>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 WebTool-Labs. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="/main.js" defer></script>
+</body>
+</html>
