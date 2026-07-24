@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+# noindexページは404.htmlのみ。検索エンジンがnoindexを確認できるようDisallowしません。
 Sitemap: https://webtool-labs.com/sitemap.xml

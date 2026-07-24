@@ -2,38 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://webtool-labs.com/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://webtool-labs.com/about.html</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-24</lastmod>
+  </url>
+  <url>
+    <loc>https://webtool-labs.com/operator.html</loc>
+    <lastmod>2026-07-23</lastmod>
+  </url>
+  <url>
+    <loc>https://webtool-labs.com/services/</loc>
+    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://webtool-labs.com/services/hayo/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://webtool-labs.com/services/matome/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://webtool-labs.com/services/henji/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-24</lastmod>
+  </url>
+  <url>
+    <loc>https://webtool-labs.com/services/mahjong/</loc>
+    <lastmod>2026-07-24</lastmod>
+  </url>
+  <url>
+    <loc>https://webtool-labs.com/services/oekaki/</loc>
+    <lastmod>2026-07-24</lastmod>
+  </url>
+  <url>
+    <loc>https://webtool-labs.com/services/mitonde/</loc>
+    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://webtool-labs.com/privacy.html</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://webtool-labs.com/terms.html</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-23</lastmod>
+  </url>
+  <url>
+    <loc>https://webtool-labs.com/disclaimer.html</loc>
+    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://webtool-labs.com/contact.html</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-23</lastmod>
   </url>
   <url>
     <loc>https://webtool-labs.com/advertising.html</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-23</lastmod>
   </url>
 </urlset>

@@ -1,0 +1,12 @@
+{
+  "name": "webtool-labs-homepage",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "test": "node scripts/validate-site.mjs",
+    "check:html": "node scripts/validate-site.mjs --html-only",
+    "check:links": "node scripts/validate-site.mjs --links-only",
+    "check:links:external": "node scripts/validate-site.mjs --links-only --external"
+  }
+}

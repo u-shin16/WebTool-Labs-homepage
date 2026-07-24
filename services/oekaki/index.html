@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>おえかきやろか | 時間を決めて描くお題アプリ - WebTool-Labs</title>
+  <meta name="description" content="ジャンル、制限時間、枚数を選んでランダムなお題を描く「おえかきやろか」の機能、使い方、出題画像、保存データと注意点を紹介します。">
+  <link rel="canonical" href="https://webtool-labs.com/services/oekaki/">
+  <meta name="robots" content="index, follow">
+  <meta name="google-adsense-account" content="ca-pub-6760057382445478">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="おえかきやろか | WebTool-Labs">
+  <meta property="og:description" content="ジャンルと時間を選び、表示されたお題をテンポよく描くためのWebアプリです。">
+  <meta property="og:url" content="https://webtool-labs.com/services/oekaki/">
+  <meta property="og:site_name" content="WebTool-Labs">
+  <meta property="og:image" content="https://webtool-labs.com/assets/icons/oekaki.webp">
+  <meta property="og:image:width" content="180">
+  <meta property="og:image:height" content="180">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="おえかきやろか | WebTool-Labs">
+  <meta name="twitter:description" content="ランダムなお題、制限時間、自動切り替えを使って描く練習ができるWebアプリです。">
+  <meta name="twitter:image" content="https://webtool-labs.com/assets/icons/oekaki.webp">
+  <meta name="theme-color" content="#0878b8">
+  <link rel="icon" type="image/png" sizes="256x256" href="/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "おえかきやろか",
+    "url": "https://oekaki.webtool-labs.com/",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Web browser",
+    "inLanguage": "ja",
+    "description": "ジャンル、制限時間、枚数を選び、ランダムに表示される画像を見ながら絵を描くためのお題Webアプリです。",
+    "image": "https://webtool-labs.com/assets/icons/oekaki.webp",
+    "featureList": [
+      "イラスト・写真のお題モード",
+      "複数ジャンルからのランダム出題",
+      "10秒・30秒・60秒・120秒の制限時間",
+      "描く枚数の設定",
+      "自動で次のお題へ進むモード",
+      "一時停止とキーボード操作"
+    ],
+    "author": {"@type": "Organization", "name": "WebTool-Labs", "url": "https://webtool-labs.com/"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "このアプリの画面に絵を描く機能はありますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "公開画面で確認できるのは、お題画像と制限時間を表示する機能です。紙や別のお絵描きアプリなど、描くための道具は別に用意してください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "どのようなお題を選べますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "公開画面では、ポケモン、全部、絵画、動物、昆虫、食べ物、植物、風景を選べます。ポケモン以外はイラストまたは写真モードを選択できます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "制限時間は変更できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "10秒、30秒、60秒、120秒から選択できます。自動モードをオンにすると、時間切れ後に次のお題へ進みます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "入力した絵は保存されますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "公開画面には絵を入力・アップロードする機能がありません。確認できたブラウザ保存はダークモード・ライトモードの選択です。アクセスログ等の保持期間は管理者確認が必要です。"
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://webtool-labs.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Webアプリ一覧", "item": "https://webtool-labs.com/services/"},
+      {"@type": "ListItem", "position": 3, "name": "おえかきやろか", "item": "https://webtool-labs.com/services/oekaki/"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="/" aria-label="WebTool-Labs トップページ"><span class="brand-mark" aria-hidden="true">W</span><span>WebTool-Labs</span></a>
+    <nav class="site-nav" id="primary-nav" aria-label="メインナビゲーション"><a href="/">ホーム</a><a href="/services/">アプリ一覧</a><a href="/about.html">このサイトについて</a><a href="/#faq">よくある質問</a><a href="/contact.html">お問い合わせ</a></nav>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="メニューを開く"><span aria-hidden="true">&#9776;</span></button>
+  </div></header>
+  <main id="main">
+    <header class="page-hero"><div class="container">
+      <nav class="breadcrumb" aria-label="パンくずリスト"><a href="/">ホーム</a><span class="sep">/</span><a href="/services/">Webアプリ一覧</a><span class="sep">/</span><span aria-current="page">おえかきやろか</span></nav>
+      <p class="eyebrow">Service</p>
+      <div class="service-hero-head"><img class="service-hero-icon" src="/assets/icons/oekaki.webp" alt="おえかきやろかのアイコン" width="72" height="72"><h1>おえかきやろか ― 時間を決めて描くランダムお題</h1></div>
+      <p>ジャンル、制限時間、描く枚数を選び、表示されたお題を見ながら絵を描くためのWebアプリです。短時間の練習や集まりでのお絵描きに使えます。</p>
+    </div></header>
+
+    <div class="section container content-layout">
+      <nav class="side-nav" aria-label="ページ内メニュー"><strong>目次</strong><a href="#overview">どんなアプリか</a><a href="#features">主な機能</a><a href="#background">解決する課題</a><a href="#difference">特徴と違い</a><a href="#first-use">使い方</a><a href="#examples">使用例</a><a href="#caution">注意点</a><a href="#data">データと外部サービス</a><a href="#recommend">おすすめの人</a><a href="#roadmap">今後の機能</a><a href="#faq">よくある質問</a></nav>
+      <article class="prose">
+        <section id="overview">
+          <h2>どのようなアプリなのか</h2>
+          <p>おえかきやろかは、「何を描くか」と「何分描くか」を毎回考える手間を減らす、お絵描きのお題アプリです。設定したジャンルから画像と名前が表示され、制限時間のゲージを見ながら紙や別の描画アプリに描きます。アプリ画面そのものに線を描くキャンバスは、公開画面では確認できません。</p>
+        </section>
+        <section id="features">
+          <h2>主な機能</h2>
+          <div class="feature-grid">
+            <article class="feature-item"><h3>イラスト・写真モード</h3><p>ポケモン以外のお題は、イラストまたは写真から選べます。</p></article>
+            <article class="feature-item"><h3>ジャンル選択</h3><p>ポケモン、絵画、動物、昆虫、食べ物、植物、風景などを選べます。</p></article>
+            <article class="feature-item"><h3>制限時間</h3><p>1枚あたり10秒、30秒、60秒、120秒から選択できます。</p></article>
+            <article class="feature-item"><h3>枚数と自動進行</h3><p>描く枚数を調整し、時間切れ後に自動で次へ進む設定ができます。</p></article>
+            <article class="feature-item"><h3>切り替えカウントダウン</h3><p>次のお題へ切り替わる前に、3秒の準備時間を入れられます。</p></article>
+            <article class="feature-item"><h3>一時停止・キー操作</h3><p>Sで開始、Pで一時停止、Nで次のお題へ進む操作に対応しています。</p></article>
+          </div>
+        </section>
+        <section id="background">
+          <h2>解決したい課題</h2>
+          <p>絵の練習を始めようとしても、お題選びに迷ったり、1枚に時間をかけすぎたりすると、枚数を重ねにくくなります。このアプリは、お題の選択と時間管理を自動化し、描く作業へすぐ移れるようにしています。開発者個人の詳しい開発背景は公開画面から確認できないため、確認できた課題と機能だけを掲載しています。</p>
+        </section>
+        <section id="difference">
+          <h2>一般的なお題一覧との違い</h2>
+          <p>文章だけのお題一覧ではなく、画像、名前、残り時間、現在の枚数を一つの画面に表示します。自動モードを使うと、お題を手動で選び直さず連続して練習できます。一方、描画・作品保存・投稿の機能は公開画面では確認できないため、描く道具は別に必要です。</p>
+        </section>
+        <section id="first-use">
+          <h2>初めての使い方</h2>
+          <ol class="step-list">
+            <li><span><a href="https://oekaki.webtool-labs.com/" target="_blank" rel="noopener noreferrer">おえかきやろか</a>をブラウザで開きます。</span></li>
+            <li>イラスト・写真と、描きたいジャンルを選びます。</li>
+            <li>1枚あたりの制限時間と描く枚数を決めます。</li>
+            <li>必要に応じて、自動モードと切り替えカウントダウンを設定します。</li>
+            <li>紙や別の描画アプリを準備し、「スタート！」を押して表示されたお題を描きます。</li>
+          </ol>
+        </section>
+        <section id="examples">
+          <h2>具体的な使用例</h2>
+          <ul>
+            <li>30秒のお題を5枚続けて、形を素早く捉える練習をする。</li>
+            <li>絵画・動物・植物など、苦手なジャンルを決めて反復する。</li>
+            <li>友人や家族と同じお題を描き、時間終了後に見せ合う。</li>
+            <li>自動モードを使い、操作を減らして連続クロッキーを行う。</li>
+          </ul>
+        </section>
+        <section id="caution">
+          <h2>利用上の注意</h2>
+          <ul>
+            <li>お題画像の読み込みには通信が必要です。通信状態や画像提供元によって表示できない場合があります。</li>
+            <li>短い制限時間で無理な姿勢を続けず、必要に応じて一時停止と休憩を利用してください。</li>
+            <li>表示画像やキャラクターには第三者の権利が含まれる場合があります。描いた作品を公開・販売するときは、対象の利用条件や権利を確認してください。</li>
+          </ul>
+        </section>
+        <section id="data">
+          <h2>保存されるデータと外部サービス</h2>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="おえかきやろかのデータ取扱い"><table class="compare-table">
+            <thead><tr><th scope="col">対象</th><th scope="col">公開画面・公開コードで確認できる範囲</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">ゲーム設定</th><td>ジャンル、時間、枚数、自動進行等は画面内の進行に利用されます。長期保存の実装は確認できません。</td></tr>
+              <tr><th scope="row">表示テーマ</th><td>ダークモード・ライトモードの選択は、ブラウザのlocalStorageへ保存されます。</td></tr>
+              <tr><th scope="row">お題の取得</th><td>アプリ内APIからお題を取得します。確認時には、ポケモン画像がPokeAPIのGitHub上の画像から読み込まれました。</td></tr>
+              <tr><th scope="row">描いた作品</th><td>公開画面には作品の入力、アップロード、保存機能はありません。</td></tr>
+            </tbody>
+          </table></div>
+          <div class="notice"><p>アクセスログの保持期間、お題データセットと画像提供元の全一覧は、このポータルのリポジトリから確認できません。</p></div>
+          <!-- TODO(site-owner): お題画像・データセットの提供元と利用条件、サーバーログの保持期間、ゲーム設定の保存有無をアプリ実装で確認して更新する。 -->
+        </section>
+        <section id="recommend">
+          <h2>利用をおすすめする人</h2>
+          <ul><li>絵の練習をしたいが、お題選びに時間を使いたくない人</li><li>制限時間を設けて、短時間で枚数を描きたい人</li><li>友人や家族と同じお題のお絵描きを楽しみたい人</li></ul>
+        </section>
+        <section id="roadmap">
+          <h2>今後の改善について</h2>
+          <p>現時点で、公開画面から確認できる具体的な追加予定はありません。新しいジャンルや機能が実装・公開されたことを確認した後に紹介内容を更新します。</p>
+          <!-- TODO(site-owner): 公開可能なロードマップが決まった場合のみ、実装状況と予定時期を確認して追記する。 -->
+        </section>
+        <section id="faq">
+          <h2>よくある質問</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary><h3>このアプリの画面に絵を描く機能はありますか？</h3></summary><p class="faq-answer">公開画面で確認できるのは、お題画像と制限時間を表示する機能です。紙や別のお絵描きアプリなど、描くための道具は別に用意してください。</p></details>
+            <details class="faq-item"><summary><h3>どのようなお題を選べますか？</h3></summary><p class="faq-answer">公開画面では、ポケモン、全部、絵画、動物、昆虫、食べ物、植物、風景を選べます。ポケモン以外はイラストまたは写真モードを選択できます。</p></details>
+            <details class="faq-item"><summary><h3>制限時間は変更できますか？</h3></summary><p class="faq-answer">10秒、30秒、60秒、120秒から選択できます。自動モードをオンにすると、時間切れ後に次のお題へ進みます。</p></details>
+            <details class="faq-item"><summary><h3>入力した絵は保存されますか？</h3></summary><p class="faq-answer">公開画面には絵を入力・アップロードする機能がありません。確認できたブラウザ保存はダークモード・ライトモードの選択です。アクセスログ等の保持期間は管理者確認が必要です。</p></details>
+          </div>
+        </section>
+        <section><div class="cta-card"><h2>おえかきやろかを開く</h2><p>描く道具を準備し、最初は30秒・数枚程度から操作とペースを試してみてください。</p><a class="button" href="https://oekaki.webtool-labs.com/" target="_blank" rel="noopener noreferrer">実際のアプリを開く</a><p><a class="text-link" href="/services/">ほかのWebアプリと比較する</a></p></div></section>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container"><div class="footer-grid">
+    <div><a class="brand footer-brand" href="/"><span class="brand-mark" aria-hidden="true">W</span><span>WebTool-Labs</span></a><p class="footer-description">実際の困りごとから考えたWebツールを、使い方と注意点を含めて紹介します。</p></div>
+    <div><p class="footer-heading">アプリ</p><div class="footer-links"><a href="/services/">アプリ一覧</a><a href="/services/hayo/">はよおきんかい</a><a href="/services/matome/">まとめときや</a><a href="/services/henji/">返事きたで</a><a href="/services/mahjong/">まーじゃんしよか</a><a href="/services/oekaki/" aria-current="page">おえかきやろか</a><a href="/services/mitonde/">よう見とんで</a></div></div>
+    <div><p class="footer-heading">サイト情報</p><div class="footer-links"><a href="/about.html">このサイトについて</a><a href="/operator.html">運営者情報</a><a href="/contact.html">お問い合わせ</a></div></div>
+    <div><p class="footer-heading">方針・規約</p><div class="footer-links"><a href="/privacy.html">プライバシーポリシー</a><a href="/terms.html">利用規約</a><a href="/disclaimer.html">免責事項</a><a href="/advertising.html">広告掲載について</a></div></div>
+  </div><p class="copyright">&copy; 2026 WebTool-Labs. All rights reserved.</p></div></footer>
+  <script src="/main.js"></script>
+</body>
+</html>
